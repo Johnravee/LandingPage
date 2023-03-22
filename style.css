@@ -1,38 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-  }
-    nav{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 30vh;
-      width: 100%;
-      padding: 0px 4cm 0 5cm;
-    }
-
-    .hamburger{
-      display: none;
-    }
-
-    .links > a{
-      text-decoration: none;
-      color: var(--Dark-grayish-blue);
-      margin: 0px 15px 0px 15px;
-    }
-
-    .links > a:hover{
-      color: var(--Soft-red);
-    }
-
-    #close{
-      display: none;
-    }
-
-
-    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 *{
@@ -53,38 +19,37 @@ html{
     --orange: #ff6e00;
 }
 
-.navbar{
-    background-color: #fcfcfc;
-}
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 10vh;
+      width: 100%;
+      padding: 0px 4cm 0 5cm;
+      background-color: #fcfcfc;
+      position: fixed;
+      z-index: 1;
+    }
 
-nav{
-    height: 10vh;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2px 12rem;   
-    background-color: #fcfcfc;
-    z-index: 1;
-    
-}
+    .hamburger{
+      display: none;
+    }
 
-nav > .menu > a{
-    text-decoration: none;
-    margin: 0px 20px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: var(--txt-secondary);
-}
+    .links > a{
+      text-decoration: none;
+      color: var(--txt-secondary);
+      margin: 0 15px;
+      font-size: 1.2rem;
+    }
 
-nav > .menu > a:hover{
-    color: var(--orange);
-}
+    .links > a:hover{
+      color: var(--orange);
+    }
 
-nav > i{
-    display: none;
-}
+    #close{
+      display: none;
+    }
+
 
 
 
@@ -159,7 +124,7 @@ section > .box{
 .search-button{
     left: -2%;
     position: relative;
-    padding: 19px 15px 17px 15px;
+    padding: 17px 15px 16px 15px;
     cursor: pointer;
     background-color: #ff6e00;
     font-size: 14px;
@@ -941,6 +906,10 @@ footer{
         top: -68%;
         left: 70%;
       }
+
+      .antiScroll{
+        overflow: hidden;
+      }
      
 
       .links{
@@ -957,6 +926,7 @@ footer{
         box-shadow: -110px 0px 5px 0px rgba(0,0,0,0.07);
 -webkit-box-shadow: -110px 0px 5px 0px rgba(0,0,0,0.07);
 -moz-box-shadow: -110px 0px 5px 0px rgba(0,0,0,0.07);
+        z-index: 1;
       }
 
       .left{
@@ -1029,7 +999,7 @@ footer{
     /* Partners */
 
     .secondPage > section{
-        height: 400vh;
+        height: 420vh;
         padding: 0;
     }
 
@@ -1214,11 +1184,11 @@ footer{
    /* CONTACT */
 
    .contacts{
-    height: 260vh;
+    height: 270vh;
    }
 
    section > .conH{
-    width: 100%;
+    width: 80%;
     left: 0;
     padding-left: 10%;
    }
